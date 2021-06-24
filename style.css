@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  min-width: 400px;
+  max-width: 768px;
   margin: 0 auto;
 
 }
@@ -33,11 +33,69 @@ header{
   margin-right:10px;
   
 }
-.fa-bars{
+.nav-links a{
+  color: rgb(28, 26, 31);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size:20px;
+}
+.nav-links{
+  position: absolute;
+  left: 0;
+  height: 92vh;
+  top: 10vh;
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in;
+  z-index: 6;
+  overflow: hidden;
+}
+.nav-links li{
+  opacity: 0;
+  
+}
+hr{
+  height: ;
+}
+.active{
+   transform: translateX(0%);
+}
+@keyframes navlinkfade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+opacity: 1;
+transform: translateX(0px);
+  }
+}
+.toggle .line1{
+transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+/* .fa-bars{
 margin-bottom: 15px;
 text-align: center;
 margin-top: 5px;
 margin-right: 10px;
+} */
+
+.burger div{
+width: 25px;
+height: 3px;
+background-color: blueviolet;
+margin: 5px;
+cursor: pointer;
 }
 .login{
   /* margin-left: 5rem; */
@@ -47,6 +105,7 @@ margin-right: 10px;
   background-color: #fff;
   margin: 10px 20px;
   border: 2px solid blueviolet;
+  cursor: pointer;
 }
 .banner-hearder img{
   /* background-image: url(images/backgroung.jpg); */
@@ -54,7 +113,8 @@ margin-right: 10px;
   height: 400px;
   position: relative;
  filter: brightness(0.30);
- z-index: -1;
+  z-index: -2; 
+  
   /* opacity:rgba(15, 13, 2, 0.774); */
  
 }
@@ -63,6 +123,7 @@ margin-right: 10px;
   left: 10%;
   top : 40%;
   width: 50%;
+  z-index: -1;
 }
 .index h1{
   color:#fff;
@@ -75,6 +136,7 @@ margin-right: 10px;
   outline: none;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 h2{
   text-align: center;
@@ -87,6 +149,7 @@ h2{
   justify-content: center;
    text-align: center;
    position: relative;
+   z-index: -1;
 }
 .fa-search{
   position: absolute;
@@ -94,6 +157,7 @@ padding: 5px;
  color: #fff;
  background-color: seagreen;
  font-size: 20px;
+ cursor: pointer;
 }
 label{
   color: blueviolet;
@@ -129,6 +193,7 @@ input{
    justify-content: space-evenly;
   margin: auto; 
   position: relative;
+  z-index: -1;
 }
 /* .retail,.marketing,.copywriting,.catering{
   width: 100px;
@@ -148,6 +213,7 @@ input{
    height: 100px;
   padding: 20px;
   align-items: center;
+  cursor: pointer;
 }
 .retail{
   position: absolute;
@@ -206,6 +272,7 @@ margin: auto;
   border: none;
   text-transform: capitalize;
   border-radius: 5px;
+  cursor: pointer;
 }
 footer{
   background-color: blueviolet;
@@ -216,6 +283,7 @@ footer{
 }
 .icon{
    text-align: center;
+   cursor: pointer;
 }
 .fab{
  
