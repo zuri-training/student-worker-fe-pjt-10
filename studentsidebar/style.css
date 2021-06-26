@@ -1,0 +1,98 @@
+
+
+ * {
+  margin: 0;
+}
+
+.wrapper {
+  display: block;
+  background-color: white;
+  flex: 0.5;
+}
+.sidebar {
+  min-width: 25%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow-x: hidden;
+  transition: 2s;
+  background-color: #fff;
+  margin-left: 20px;
+ 
+}
+.circle {
+  border-radius: 999px;
+  width: 20px;
+  border: 1px solid #5f27cd;
+  padding-left: 12px;
+  padding-right: 6px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-right: 10px;
+  color: #5f27cd;
+}
+
+.content {
+  width: inherit;
+  height: auto;
+  transform: translateY(-50%);
+  text-align: center;
+  position: relative;
+  color: #5f27cd;
+}
+
+.mail {
+  text-align: center;
+  justify-content: center;
+}
+.mail p {
+  margin: 0;
+  
+}
+.left {
+  float: left;
+  width: 45px;
+}
+.right {
+  float: left;
+  margin: 0 0 0 5px;
+  width: 215px;
+}
+
+.sidebarList li {
+  margin-top: 1em;
+  list-style: none;
+  color: #5f27cd;
+  margin-bottom: 1em;
+}
+.sidebarList li a {
+  text-decoration: none;
+  color: #5f27cd;
+}
+.sidebarList li a:focus {
+  color: #5f27cd;
+}
+.sidebarClose {
+  position: absolute;
+  right: 5px;
+  font-size: 45px;
+  color: #5f27cd;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.circle-margin{
+ color: #5f27cd;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin: 20px 40px;
+}
+
+.top {
+  margin-top: 150px;
+}
