@@ -1,0 +1,132 @@
+
+.megacontainer{
+   padding: 1em 2em;
+   margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.modal{
+    position: relative;
+    min-height: 70vh;
+    overflow: hidden;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px 10px 0;
+}
+.close{
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    color: #5F27CD;
+}
+.slider{
+    display: inline-block;
+    width: 300px;
+}
+.slider span{
+    color: #5F27CD;
+    margin: 1em 1em 0 0;
+    padding: 2em 1em 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.modal form{
+     width: 300px;
+     padding: 0 2em;
+     position: absolute;
+     top: 110px;
+     transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+input a:focus{
+    outline: none;
+}
+
+button{
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0.5em 2em;
+    margin-top: 1em;
+    width: 100%;
+} 
+#student{
+    left: -300px;
+    box-sizing: border-box;
+}
+#employer{
+    left: 0;
+    box-sizing: border-box;
+}
+#indicator{
+    width: 100px;
+    border: none;
+    background: #5F27CD;
+    height: 1px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+#move{
+    position: absolute;
+    left: 200px;
+}
+
+.or{
+    text-align: center;
+}
+.forgot{
+    text-align: right;
+    color: #0000EE;
+}
+.SElink{
+    color: #0000EE;
+}
+a{
+    text-decoration: none;
+}
+.signup{
+    text-align: center;
+}
+.google{
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    border: 1px black solid;
+}
+.loginbtn{
+    background-color: #0A674F;
+    border: 1px solid #0A674F;
+    border-radius: 3px;
+}
+/* Footer */
+footer{
+    padding: 2em 1.5em;
+    background-color: #2A1979;
+    color: white;
+}
+.social, .copyright, .about{
+    text-align: center;
+}
+.social a {
+    font-size: 26px;
+    margin: 0 10px 0 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+.login a{
+    text-decoration: none;
+}
