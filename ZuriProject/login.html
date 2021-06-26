@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="megacontainer">
+        <div class="modal">
+            <span class="close"><a href="#">&#8592;</a></span>
+
+            <div class="slider">
+                <span onclick="studentFn()">Student</span>
+                <span id="move" onclick="employerFn()">Employer</span>
+            </div>
+            <hr id="indicator">
+
+            <form class="form" id="student">
+                <button type="submit" class="google">Login with Google</button><br>
+                <p class="or">or</p>
+                <label for="email">Email</label><br>
+                <input type="text" class="email"> <br>
+                <label for="password">Password</label><br>
+                <input type="password" class="password"> <br>
+                <div class="forgot"><a href="#">Forgot password?</a></div> <br>
+                <button type="submit">Login</button>
+                <p class="signup">Don't have an account? Sign up
+                    (<b><a href="#">Student</a>/<a href="#">Employer</a></b>)
+                </p>
+            </form>
+
+            <form class="form" id="employer">
+                <button type="submit" class="google">Login with Google</button><br>
+                <p class="or">or</p>
+                <label for="email">Email</label><br>
+                <input type="text" class="email"> <br>
+                <label for="password">Password</label><br>
+                <input type="password" class="password"> <br>
+                <div class="forgot"><a href="#">Forgot password?</a></div> <br>
+                <button type="submit" class="loginbtn">Login</button>
+                <p class="signup">Don't have an account? Sign up
+                    (<b class="SElinks"><a href="#">Student</a>/<a href="#">Employer</a></b>)
+                </p>
+            </form>
+
+        </div>
+    </div>
+    <script>
+        var indicator = document.getElementById("indicator")
+        var employer = document.getElementById("employer")
+        var student = document.getElementById("student")
+        var container = document.querySelector(".container")
+
+        function employerFn() {
+            student.style.transform = "translateX(0px)"
+            employer.style.transform = "translateX(0px)"
+            indicator.style.transform = "translateX(100px)"
+        }
+        function studentFn() {
+            student.style.transform = "translateX(300px)"
+            employer.style.transform = "translateX(300px)"
+            indicator.style.transform = "translateX(-100px)"
+        }
+    </script>
+    <footer>
+        <p class="social">
+            <span><a href="https://linkedin.com" class="fa fa-linkedin" aria-hidden="true"></a></span>
+            <span> <a href="https://instagram.com" class="fa fa-instagram" aria-hidden="true"></a></span>
+            <span><a href="https://twitter.com" class="fa fa-twitter" aria-hidden="true"></a></span>
+            <span><a href="https://facebook.com" class="fa fa-facebook-f" aria-hidden="true"></a></span>
+            <span><a href="https://facebook.com" class="fas fa-clock" aria-hidden="true"></a></span>
+
+        </p>
+        <p class="about">
+            <span>About Us</span>
+            <span>Contact Us</span>
+            <span>Terms & Privacy Policy</span>
+            <span>Help</span>
+        </p>
+        <p class="copyright">Copyright student worker 2021</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Application</title>
+    <link rel="stylesheet" href="jobDescription.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <p class="sidebarClose" onclick="closeSidebar()">&times;</p>
+            <div class="sidebarList">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Part-time Jobs</a></li>
+                    <li><a href="#">Employers</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <span class="hamburger" onclick="openSidebar()">&#9776;</span>
+        <span class="studentworker">StudentWorker</span>
+    </nav>
+    <section>
+        <p class="apps">My Applications</p>
+        <hr class="appshr">
+        <div class="appmargin">
+            <span class="apptitle">Job title</span><br>
+            <span>Company</span>
+            <p>Status: <span class="selected">Selected</span></p>
+            <p><span class="appnum fa fa-user-friends">12</span>Applicants <span class="appdate fa fa-calendar">Applied Today</span></p>
+        </div>
+    </section>
+    <footer class="appfooter">
+        <p class="social">
+            <span><a href="https://linkedin.com" class="fa fa-linkedin" aria-hidden="true"></a></span>
+            <span> <a href="https://instagram.com" class="fa fa-instagram" aria-hidden="true"></a></span>
+            <span><a href="https://twitter.com" class="fa fa-twitter" aria-hidden="true"></a></span>
+            <span><a href="https://facebook.com" class="fa fa-facebook-f" aria-hidden="true"></a></span>
+        </p>
+        <p class="about">
+            <span>About Us</span>
+            <span>Contact Us</span>
+            <span>Terms & Privacy Policy</span>
+            <span>Help</span>
+        </p>
+        <p class="copyright">Copyright student worker 2021</p>
+    </footer>
+    <script src="sidebar.js"></script>
+</body>
+
+</html>
