@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Side Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+        <p class="sidebarClose" onclick="closeSidebar()">&times;</p>
+        <div class="top">
+               <div class="flex">
+                <h3 class="circle">D</h3>
+                <span class="circle-margin">
+                    <p>Daniel Sliver</p>
+                    <p>danielsliver@gmail.com</p>
+                </span>
+                </div>
+        <div class="sidebarList">
+                <hr>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Post jobs</a></li>
+                    </ul>
+                    <hr>
+                    <ul >
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Manage Account</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        var sidee = document.querySelector(".sidebar")
+        function closeSidebar() {
+          sidee.style.display = "none";
+        }
+        function openSidebar(){
+            sidee.style.display = "block";
+        }
+    </script>
+</body>
+</html>
