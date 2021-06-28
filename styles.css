@@ -1,0 +1,316 @@
+ 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  color: blueviolet;
+  /* border: 3px solid black; */
+  padding: 10px;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+.head-div{
+  /* border: 3px solid green; */
+  display: flex;
+  width: 70%;
+  height: 30px;
+  margin: 20px;
+  margin-bottom: 20px;
+}
+.head-div h1{
+  text-transform: capitalize;
+  font-size: 25px;
+  margin-right:10px;
+  
+}
+header a{
+  color: blueviolet;
+}
+
+
+.wrapper{
+            display: flex;
+             flex-direction: row; 
+            background-color: white;
+        }
+        .sidebar{
+            min-width: 60%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            margin: 0 1em 1em 0;
+            overflow-x: hidden;
+            transition: 2s;
+            background-color: #fff;
+           display: none;
+            
+         }
+        .sidebarList{
+            margin-top: 6em;
+           
+        }
+        .sidebarList ul{
+          display: block !important;
+        }
+        .sidebarList li{
+           margin-top: 1em;
+           list-style: none;
+           color: #5F27CD;
+          
+        }
+        .sidebarList li a{
+            text-decoration: none;
+            color: #5F27CD;
+            
+        }
+        .sidebarList li a:focus{
+            color: gray;
+        }
+        .sidebarClose{
+            position: absolute;
+            right: 5px;
+            font-size: 25px;
+            color: #5F27CD;
+            cursor: pointer;
+        }
+.sidebarOpen{
+  position: absolute;
+            left: 5px;
+            font-size: 25px;
+            color: #5F27CD;
+            cursor: pointer;
+}
+
+
+.burger div{
+width: 25px;
+height: 3px;
+background-color: blueviolet;
+margin: 5px;
+cursor: pointer;
+z-index: 7;
+}
+.login{
+  /* margin-left: 5rem; */
+  width: 100px;
+  height: 40px;
+  color: blueviolet;
+  background-color: #fff;
+  margin: 10px 20px;
+  border: 2px solid blueviolet;
+  cursor: pointer;
+}
+.banner-hearder img{
+  width: 100%;
+  height: 400px;
+  position: relative;
+ filter: brightness(0.30);
+  z-index: -2; 
+  }
+  .banner-hearder{
+    position: relative;
+  }
+.index{
+  position: absolute;
+  left: 10%;
+  top : 40%;
+  width: 50%;
+  z-index: -1;
+}
+.index h1{
+  color:#fff;
+  text-transform: capitalize;
+}
+.index button{
+  background-color: seagreen;
+  color: #fff;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+h2{
+  text-align: center;
+  text-transform: capitalize;
+  color: blueviolet;
+  margin-top: 20px;
+}
+.label{
+  margin:20px auto;
+  justify-content: center;
+   text-align: center;
+   position: relative;
+   z-index: -1;
+}
+.fa-search{
+  position: absolute;
+padding: 5px;
+ color: #fff;
+ background-color: seagreen;
+ font-size: 20px;
+ cursor: pointer;
+}
+label{
+  color: blueviolet;
+  margin: auto;
+   padding: 10px;
+}
+input{
+  width: 250px;
+  height: 30px;
+  border:1px solid seagreen;
+  padding: 10px;
+}
+.icon-div img{
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  
+}
+.icon-div img{
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  color: seagreen;
+  
+}
+.my-content{
+  width: 350px;
+  height: 300px;
+   text-align: center; 
+   border: 3px solid red; 
+   display: flex;
+   justify-content: space-evenly;
+  margin: auto; 
+  position: relative;
+  z-index: -1;
+}
+
+
+.category{
+   border: 3px solid green; 
+  display: inline-block;
+  background-color: blueviolet;
+  color: #fff;
+ margin: 20px 15px;
+  width: 100px; 
+   height: 100px;
+  padding: 20px;
+  align-items: center;
+  cursor: pointer;
+ 
+}
+.retail{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+ 
+ margin:auto;
+}
+.marketing{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 150px;
+  margin: auto;
+}
+
+.copywriting{
+  position: absolute;
+  top: 120px;
+  left: 10px;
+ bottom: -10px;
+  margin: auto;
+
+}
+.catering{
+  position: absolute;
+  top: 120px;
+  right: 10px;
+  bottom: -10px;
+  margin: auto;
+
+}
+h4{
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.banner-pic{
+   /* border: 3px solid ;  */
+text-align: center;
+margin: auto;
+}
+.banner-pic h2{
+  width: 200px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  align-items: center;
+}
+.banner-pic p{
+  text-transform: capitalize;
+  color: blueviolet;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.banner-pic button{
+  margin-bottom: 50px;
+  background-color: seagreen;
+  color: #fff;
+  padding: 10px ;
+  border: none;
+  text-transform: capitalize;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer{
+  background-color: blueviolet;
+  color: #fff;
+  width: 100%;
+  height: 150px;
+  padding: 30px;
+}
+.icon{
+   text-align: center;
+   cursor: pointer;
+}
+.fab{
+ 
+  margin-right: 10px;
+}
+ul{
+  display: flex;
+}
+li {
+ list-style-type: none;
+ margin-right: 15px;
+ margin-top: 20px;
+ text-align: center;
+ margin-bottom: 20px;
+}
+a{
+  text-decoration: none;
+ color: #fff;
+}
+.copy{
+  text-align: center;
+  margin-top: 10px;
+}
