@@ -7,7 +7,7 @@
   text-decoration: none;
 }
 body{
- /* max-width: 400px;*/
+ max-width: 768px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
 
@@ -313,4 +313,9 @@ a{
 .copy{
   text-align: center;
   margin-top: 10px;
+}
+@media(min-width:768px){
+Body{
+Width:100%;
+}
 }
