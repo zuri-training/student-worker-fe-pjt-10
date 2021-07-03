@@ -3,6 +3,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -16,69 +17,65 @@ header {
     padding-bottom: 1em;
 }
 
-.logo {
-    margin-left: 1.5em;
+.nav-bar {
+    width: 100%;
+    text-align: center;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 30px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.logo-1 {
+    font-size: 1.7vw;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
 }
 
-.logo span {
-    margin-left: 10px;
-    color: #1F135B;
-    font-weight: 700;
+.logo-1 {
+    padding: 0px 5px;
 }
 
-.login {
-    margin-right: 1em;
-    border-radius: 3px;
-    border: 1px solid #1F135B;
+.logo-fa {
+    display: none;
+}
+
+.menu {
+    font-size: 1.3vw;
+}
+
+.nav-btn {
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 10px 30px;
+    margin-top: -10px;
+    font-size: 1.7vw
+}
+
+.nav-link {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-1 {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 10%;
-    padding-bottom: 5px;
-    padding-top: 5px;
 }
 
-.login a {
+.nav-link-1 {
+    padding: 0 20px;
     text-decoration: none;
-    color: #1F135B;
-}
-
-nav{
-    display: block;
-    border: 1px solid #1F135B;
-    height: 100vh;
-    padding-left: 1em;
-    padding-right: 1em;
-    position: absolute;
-    background-color: #fff;
-    top: 2em;
-    left: 5em;
-    width: 50%;
-    border-radius: 3px;
-    z-index: 9999;
-}
-
-.close {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 1em;
-    align-self: flex-end;
-}
-
-nav li {
-    list-style-type: none;
-    text-align: left;
-    margin-top: 1em;
-}
-
-nav li a {
-    text-decoration: none;
-    color: #1F135B;
-    font-weight: 500;
+    color: #000;
 }
 
 #intro {
@@ -259,6 +256,21 @@ footer {
 
     .mobilenone{
         display: none;
+    }
+    
+    .logo-fa {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .nav-bar,
+    .logo-1 {
+        font-size: 3vw;
+    }
+
+    .logo{
+        width: 40%;
     }
 
     .signup {
