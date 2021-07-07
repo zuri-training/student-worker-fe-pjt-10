@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Application</title>
+    <link rel="stylesheet" href="jobDescription.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/3c83d4aa48.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <p class="sidebarClose" onclick="closeSidebar()">&times;</p>
+            <div class="sidebarList">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Part-time Jobs</a></li>
+                    <li><a href="#">Employers</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav class="nav2">
+        <div>
+            <span class="hamburger2" onclick="openSidebar()">&#9776;</span>
+            <span class="studentworker2">StudentWorker</span>
+        </div>
+        <div class="end">
+            <span><a href="">Jobs</a></span>
+            <span><a href="">My Application</a></span>
+            <span><a href="">Edit Resume</a></span>
+            <span><i class="far fa-comment" style="color: #341F97;"></i></span>
+            <span class="alphabet">A</span>
+            <span><i class="fa fa-caret-down" style="color: #341F97;"></i></span>
+        </div>
+    </nav>
+    <nav class="hidenav">
+        <div class="navmobile">
+         <div>
+             <span class="hamburger2" onclick="openSidebar()">&#9776;</span>
+             <span class="studentworker2">StudentWorker</span>
+         </div>
+         <div class="endmobile">
+             <span><i class="far fa-comment" style="color: #341F97;"></i></span>
+         </div>
+        </div>
+     </nav>
+    <hr>
+    <section class="mobileapp">
+        <p class="apps">My Applications</p>
+        <hr class="appshr">
+        <div class="appmargin">
+            <span class="apptitle">Job title</span><br>
+            <span>Company</span>
+            <p>Status: <span class="selected">Selected</span></p>
+            <p><span class="appnum fa fa-user-friends">12</span>Applicants <span> <i class="appdate fa fa-calendar"></i>
+                Applied Today</span></p>
+        </div>
+    </section>
+    <section class="desktopapp">
+        <div class="desktoptitle">
+            <span>Company</span>
+            <span>Role</span>
+            <span>Applied on</span>
+            <span>Number of Aplicants</span>
+            <span>Application Status</span>
+        </div>
+        <div class="desktopinfo">
+            <span>Company</span>
+            <span>Job title</span>
+            <span>Today</span>
+            <span>12</span>
+            <span>Applied</span>
+        </div>
+    </section>
+    <p class="pagenum"><i class="fa fa-chevron-left" style="color: #341F97;"></i>1/1<i class="fa fa-chevron-right" style="color: #341F97;"></i></p>
+    <footer class="appfooter">
+        <p class="social">
+            <span><a href="https://linkedin.com" class="fa fa-linkedin" aria-hidden="true"></a></span>
+            <span> <a href="https://instagram.com" class="fa fa-instagram" aria-hidden="true"></a></span>
+            <span><a href="https://twitter.com" class="fa fa-twitter" aria-hidden="true"></a></span>
+            <span><a href="https://facebook.com" class="fa fa-facebook-f" aria-hidden="true"></a></span>
+        </p>
+        <p class="about">
+            <span>About Us</span>
+            <span>Contact Us</span>
+            <span>Terms & Privacy Policy</span>
+            <span>Help</span>
+        </p>
+        <p class="copyright">Copyright student worker 2021</p>
+    </footer>
+    <script src="sidebar.js"></script>
+</body>
+
+</html>

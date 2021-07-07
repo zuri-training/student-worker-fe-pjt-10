@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Category</title>
+    <link rel="stylesheet" href="jobDescription.css">
+    <script src="https://kit.fontawesome.com/3c83d4aa48.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <p class="sidebarClose" onclick="closeSidebar()">&times;</p>
+            <div class="sidebarList">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Part-time Jobs</a></li>
+                    <li><a href="#">Employers</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav class="nav3">
+        <div>
+            <span class="hamburger2" onclick="openSidebar()">&#9776;</span>
+            <span class="studentworker2">StudentWorker</span>
+        </div>
+        <div class="end">
+            <span><a href="">Jobs</a></span>
+            <span><a href="">My Application</a></span>
+            <span><a href="">Edit Resume</a></span>
+            <span><i class="far fa-comment" style="color: #341F97;"></i></span>
+            <span class="alphabet">A</span>
+            <span><i class="fa fa-caret-down" style="color: #341F97;"></i></span>
+        </div>
+        <div class="hidecomment"><span><i class="far fa-comment" style="color: #341F97;"></i></span></div>
+    </nav>
+    <hr>
+    <div class="global">
+        <div class="subglobal">
+            <section>
+                <form action="" class="find">
+                    <p class="titletext">Title/Keyword/Catergory</p>
+                    <input type="text" id="inputbox" placeholder="UI/UX Designer"><span><i id="searchicon"
+                            class="fa fa-search" aria-hidden="true"></i>
+                    </span>
+                </form>
+            </section>
+            <div class="filterdrop">
+                <p class="closebtn2" onclick="closemodal()" style="color:#0A674F">&times;</p>
+                <span>Narrow your search</span>
+                <hr>
+                <div class="city">
+                    <span>Location:</span>
+                    <select name="" class="select" >
+                        <option value="all">All</option>
+                        <option value="uyo">Uyo</option>
+                        <option value="lagos">Lagos</option>
+                        <option value="port-harcourt">Port-harcourt</option>
+                        <option value="abuja">Abuja</option>
+                    </select>
+                </div>
+                <br>
+                <span>Job type</span><input type="checkbox">Remote
+                <input type="checkbox">On-site <br>
+                <button class="apply2">Apply</button>
+            </div>
+
+            <div class="desktopflex">
+                <div class="desktopfilter">
+                    <p><i class="fa fa-filter"></i>
+                        Filter</p><br>
+                    <span>Narrow your search</span>
+                    <hr>
+                    <div class="city">
+                        <span>Location:</span>
+                        <select name="" class="select">
+                            <option value="all">All</option>
+                            <option value="uyo">Uyo</option>
+                            <option value="lagos">Lagos</option>
+                            <option value="port-harcourt">Port-harcourt</option>
+                            <option value="abuja">Abuja</option>
+                        </select>
+                    </div>
+                    <br>
+                    <span>Job type</span><input type="checkbox">Remote
+                    <input type="checkbox">On-site <br>
+                </div>
+                <div class="desktopfilterflex">
+
+                    <span class="jobsflex">
+                        <span>12000 Jobs</span>
+                        <span class="filter" id="filter" onclick="filter()">
+                            <i class="fa fa-filter"></i>
+                            Filter
+                        </span>
+                    </span><hr>
+
+                    <section class="upper">
+                        <h3>Job Title</h3>
+                        <span>Company</span>
+                        <div class="location">
+                            <p><span><i class="fas      fa-map-marker-alt"></i>
+                                    <small>Location</small></span>
+                                <span class="span"><i class="fa fa-globe"></i><small>Remote</small></span>
+                            </p><br class="br">
+                            <p><span><i class="fa fa-money"></i>
+                                    <small>N20000/mo</small></span>
+                                <span><i class="fa fa-clock-o span"></i>
+                                    <small> N20000/mo</small></span>
+                            </p>     
+                            <br>
+                        </div>
+                        <p>
+                        
+                            <small>10</small> <small>days ago </small>||
+                            <small>12</small> <small>Applicants</small>
+                            <span class="details"><a href="jobDescription.html"><small>View Details</small></a></span>
+                        </p>
+                    </section>
+                    <hr>
+                    <section class="upper">
+                        <h3>Job Title</h3>
+                        <span>Company</span>
+                        <div class="location">
+                            <p><span><i class="fas      fa-map-marker-alt"></i>
+                                    <small>Location</small></span>
+                                <span class="span"><i class="fa fa-globe"></i><small>Remote</small></span>
+                            </p><br class="br">
+                            <p><span><i class="fa fa-money"></i>
+                                    <small>N20000/mo</small></span>
+                                <span><i class="fa fa-clock-o span"></i>
+                                    <small> N20000/mo</small></span>
+                            </p>     
+                            <br>
+                        </div>
+                            <small>10</small> <small>days ago </small>||
+                            <small>12</small> <small>Applicants</small>
+                            <span class="details"><a href="jobDescription.html"><small>View Details</small></a></span>
+                        
+                    </section>
+                    <hr>
+                    <section class="upper">
+                        <h3>Job Title</h3>
+                        <span>Company</span>
+                        <div class="location">
+                            <p><span><i class="fas      fa-map-marker-alt"></i>
+                                    <small>Location</small></span>
+                                <span class="span"><i class="fa fa-globe"></i><small>Remote</small></span>
+                            </p><br class="br">
+                            <p><span><i class="fa fa-money"></i>
+                                    <small>N20000/mo</small></span>
+                                <span><i class="fa fa-clock-o span"></i>
+                                    <small> N20000/mo</small></span>
+                            </p>     
+                            <br>
+                        </div>
+                            <small>10</small> <small>days ago </small>||
+                            <small>12</small> <small>Applicants</small>
+                            <span class="details"><a href="jobDescription.html"><small>View Details</small></a></span>
+                    
+                    </section>
+                    <hr>
+                    <section class="upper">
+                        <h3>Job Title</h3>
+                        <span>Company</span>
+                        <div class="location">
+                            <p><span><i class="fas      fa-map-marker-alt"></i>
+                                    <small>Location</small></span>
+                                <span class="span"><i class="fa fa-globe"></i><small>Remote</small></span>
+                            </p><br class="br">
+                            <p><span><i class="fa fa-money"></i>
+                                    <small>N20000/mo</small></span>
+                                <span><i class="fa fa-clock-o span"></i>
+                                    <small> N20000/mo</small></span>
+                            </p>     
+                            <br>
+                        </div>
+                            <small>10</small> <small>days ago </small>||
+                            <small>12</small> <small>Applicants</small>
+                            <span class="details"><a href="jobDescription.html"><small>View Details</small></a></span>
+                        
+                    </section>
+                    <hr>
+                    <section class="upper">
+                        <h3>Job Title</h3>
+                        <span>Company</span>
+                        <div class="location">
+                            <p><span><i class="fas      fa-map-marker-alt"></i>
+                                    <small>Location</small></span>
+                                <span class="span"><i class="fa fa-globe"></i><small>Remote</small></span>
+                            </p><br class="br">
+                            <p><span><i class="fa fa-money"></i>
+                                    <small>N20000/mo</small></span>
+                                <span><i class="fa fa-clock-o span"></i>
+                                    <small> N20000/mo</small></span>
+                            </p>     
+                            <br>
+                        </div>
+                            <small>10</small> <small>days ago </small>||
+                            <small>12</small> <small>Applicants</small>
+                            <span class="details"><a href="jobDescription.html"><small>View Details</small></a></span>
+                    </section>
+                    <hr>
+                    <p class="nextprev"><span><i class="fa fa-chevron-left" style="color: #341F97;"></i>
+                            <a href="">1</a>
+                            <a href="">2</a>
+                            <a href="">3</a>
+                            <a href="">4</a>
+                            <i class="fa fa-chevron-right" style="color: #341F97;"></i></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="social">
+            <span><a href="https://linkedin.com" class="fa fa-linkedin" aria-hidden="true"></a></span>
+            <span> <a href="https://instagram.com" class="fa fa-instagram" aria-hidden="true"></a></span>
+            <span><a href="https://twitter.com" class="fa fa-twitter" aria-hidden="true"></a></span>
+            <span><a href="https://facebook.com" class="fa fa-facebook-f" aria-hidden="true"></a></span>
+
+        </p>
+        <p class="about">
+            <span>About Us</span>
+            <span>Contact Us</span>
+            <span>Terms & Privacy Policy</span>
+            <span>Help</span>
+        </p>
+        <p class="copyright">Copyright student worker 2021</p>
+    </footer>
+    <script src="sidebar.js"></script>
+</body>
+
+</html>
