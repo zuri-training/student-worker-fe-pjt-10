@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Application</title>
+    <link rel="stylesheet" href="./jobDescription.css">
+    <script src="https://kit.fontawesome.com/3c83d4aa48.js" crossorigin="anonymous"></script>
+    <style>
+        .end .fa, .end .far {
+            color: #341F97;
+        }
+        .mobileconfirm{
+            display: none;
+        }
+        @media only screen and (max-width: 768px){
+            .confirmbox{
+                display: none;
+            }
+            .mobileconfirm{
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <p class="sidebarClose" onclick="closeSidebar()">&times;</p>
+            <div class="sidebarList">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Part-time Jobs</a></li>
+                    <li><a href="#">Employers</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav class="nav2">
+        <div>
+            <span class="hamburger2" onclick="openSidebar()">&#9776;</span>
+            <span class="studentworker2">StudentWorker</span>
+        </div>
+        <div class="end">
+            <span><a href="">Jobs</a></span>
+            <span><a href="">My Application</a></span>
+            <span><a href="">Edit Resume</a></span>
+            <span><i class="far fa-comment"></i></span>
+            <span class="alphabet">A</span>
+            <span><i class="fa fa-caret-down"></i></span>
+        </div>
+        <div class="hidecomment"><span><i class="far fa-comment" style="color: #341F97;"></i></span></div>
+    </nav>
+
+    <hr>
+    <main class="mobileconfirm">
+        <section class="popup">
+            <div class="confirm">
+                <p>Applying for Job Title at Company <br>
+                    This is the resume that the employer will see, make sure it is up to date
+                </p>
+                <button class="confirmbtn">Confirm</button>
+            </div>
+        </section>
+        <section class="resumeSection">
+            <h3 class="resume">Resume</h3>
+            <p>Personal Details</p>
+            <span>Ayo David</span><span class="pen">&#9998;</span><br>
+            <span>ayodavid@gmail.com</span><br>
+            <span>09034567862</span><br>
+            <span>Apapa, Lagos</span>
+        </section>
+        <section class="resumeSection">
+            <p>Education</p>
+            <span>Mechanical Engineering</span><span class="pen">&#9998;</span><br>
+            <span>University of Lagos</span><br>
+            <span>2019 - 2022</span>
+        </section>
+        <section class="resumeSection">
+            <p>Skills</p>
+            <ol>
+                <li>Graphic Design</li><span class="pen">&#9998;</span>
+                <li>Communication skills</li>
+                <li>Teamwork</li>
+            </ol>
+        </section>
+       </main>
+    <main class="confirmbox">
+        <section class="popup">
+            <div class="confirm">
+                <p>Applying for Job Title at Company <br>
+                    This is the resume that the employer will see, make sure it is up to date
+                </p>
+                <button class="confirmbtn">Confirm</button>
+            </div>
+        </section>
+        <h3 class="resume">Resume</h3>
+        <div class="allsection">
+            <section class="resumeSection">
+                <p>Personal Details</p>
+                <span>Ayo David</span><span class="pen">&#9998;</span><br>
+                <span>ayodavid@gmail.com</span><br>
+                <span>09034567862</span><br>
+                <span>Apapa, Lagos</span>
+            </section>
+            <hr>
+            <section class="resumeSection resumeflex">
+                <p>Education</p>
+                <div>
+                    <span>Mechanical Engineering</span><br>
+                    <span>University of Lagos</span><br>
+                    <span>2019 - 2022</span>
+                </div>
+                <div><span class="pen">&#9998;</span><br></div>
+            </section>
+            <section class="resumeSection resumeflex">
+                <p>Skills</p>
+                <ol>
+                    <li>Graphic Design</li>
+                    <li>Communication skills</li>
+                    <li>Teamwork</li>
+                </ol>
+                <div><span class="pen">&#9998;</span></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p class="social">
+            <span><a href="https://linkedin.com" class="fa fa-linkedin" aria-hidden="true"></a></span>
+            <span> <a href="https://instagram.com" class="fa fa-instagram" aria-hidden="true"></a></span>
+            <span><a href="https://twitter.com" class="fa fa-twitter" aria-hidden="true"></a></span>
+            <span><a href="https://facebook.com" class="fa fa-facebook-f" aria-hidden="true"></a></span>
+
+        </p>
+        <p class="about">
+            <span>About Us</span>
+            <span>Contact Us</span>
+            <span>Terms & Privacy Policy</span>
+            <span>Help</span>
+        </p>
+        <p class="copyright">Copyright student worker 2021</p>
+    </footer>
+    <script src="sidebar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar-2</title>
+    <script src="https://kit.fontawesome.com/3c83d4aa48.js" crossorigin="anonymous"></script>
+    <style>
+        .nav2 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .end span {
+            margin-right: 10px;
+            color: #341F97;
+            font-size: 18px;
+            padding: 0 5px;
+        }
+
+        .end span a {
+            text-decoration: none;
+            color: #341F97;
+        }
+
+        .end {
+            margin-right: 20px;
+            padding-top: 10px;
+        }
+
+        .alphabet {
+            width: 0px;
+            height: 0px;
+            padding: 3px 4px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            border: 1px solid #341F97;
+        }
+
+        .hamburger2 {
+            display: nne;
+            font-size: 25px;
+            color: #341F97;
+            cursor: pointer;
+        }
+
+        .studentworker2 {
+            font-size: 25px;
+            font-weight: 400;
+            color: #1F135B;
+        }
+
+        .navmobile {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hidecomment {
+            display: none;
+            margin: 10px 20px;
+            font-size: 18px;
+        }
+        @media only screen and (max-width: 768px){
+             .end{
+                 display: none;
+             }
+             .hidecomment{
+                 display: block;
+             }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav2">
+        <div>
+            <span class="hamburger2" onclick="openSidebar()">&#9776;</span>
+            <span class="studentworker2">StudentWorker</span>
+        </div>
+        <div class="end">
+            <span><a href="">Jobs</a></span>
+            <span><a href="">My Application</a></span>
+            <span><a href="">Edit Resume</a></span>
+            <span><i class="far fa-comment" style="color: #341F97;"></i></span>
+            <span class="alphabet">A</span>
+            <span><i class="fa fa-caret-down" style="color: #341F97;"></i></span>
+        </div>
+        <div class="hidecomment"><span><i class="far fa-comment" style="color: #341F97;"></i></span></div>
+    </nav>
+    
+    
+    
+    <br><br>
+    <nav class="hidenav">
+        <div class="navmobile">
+            <div>
+                <span class="hamburger2" onclick="openSidebar()">&#9776;</span>
+                <span class="studentworker2">StudentWorker</span>
+            </div>
+            <div class="end">
+                <span><i class="fa fa-comment" style="color: #341F97;"></i></span>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://kit.fontawesome.com/3c83d4aa48.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="loginpage.css">
+</head>
+
+<body>
+    <div class="megacontainer">
+        <div class="modal">
+            <section class="top">
+                <h3>StudentWorker</h3>
+                <span>
+                    Login to your Account</span>
+            </section>
+            <div class="form-container">
+                <div class="form-btn">
+                    <span onclick="student()" id="colorStudent">Student</span>
+                    <span onclick="employer()" id="colorEmployer">Employer</span>
+                </div>
+                <hr id="indicator">
+                <form id="student">
+                    <button class="googleLogin"><i class="fab fa-google"></i>
+                        Login with Google</button>
+                    <p>or</p>
+                    <label for="">Email</label><br>
+                    <input type="email"><br>
+                    <label for="">Password</label><br>
+                    <input type="password"><br>
+                    <a href="" class="forgotPassword">Forgot password?</a><br>
+                    <button class="btn">Login</button>
+                    <p>Don't have an account? <a href="./signup.html" class="signup">Sign up</a></p>
+                </form>
+                <form id="employer">
+                    <button class="googleLogin"><i class="fab fa-google"></i>
+                        Login with Google</button>
+                    <p>or</p>
+                    <label for="">Email</label><br>
+                    <input type="email"><br>
+                    <label for="">Password</label><br>
+                    <input type="password"><br>
+                    <a href="" class="forgotPassword">Forgot password?</a><br>
+                    <button class="btn">Login</button>
+                    <p>Don't have an account? <a href="./signup.html" class="signup">Sign up</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="social">
+            <span><a href="https://linkedin.com" class="fa fa-linkedin" aria-hidden="true"></a></span>
+            <span> <a href="https://instagram.com" class="fa fa-instagram" aria-hidden="true"></a></span>
+            <span><a href="https://twitter.com" class="fa fa-twitter" aria-hidden="true"></a></span>
+            <span><a href="https://facebook.com" class="fa fa-facebook-f" aria-hidden="true"></a></span>
+            <span><a href="https://facebook.com" class="fas fa-clock" aria-hidden="true"></a></span>
+
+        </p>
+        <p class="about">
+            <span>About Us</span>
+            <span>Contact Us</span>
+            <span>Terms & Privacy Policy</span>
+            <span>Help</span>
+        </p>
+        <p class="copyright">Copyright student worker 2021</p>
+    </footer> 
+    <script>
+        var studentForm = document.getElementById("student")
+        var employerForm = document.getElementById("employer")
+        var indicator = document.getElementById("indicator")
+        var colorStudentFn = document.getElementById("colorStudent")
+        var colorEmployerFn = document.getElementById("colorEmployer")
+
+        function employer(){
+            studentForm.style.transform = "translateX(0px)";
+            employerForm.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(70px)";
+            colorStudentFn.style.color = "#6B6B6B"
+            colorEmployerFn.style.color = "#5F27CD"
+        }
+
+        function student(){
+            studentForm.style.transform = "translateX(315px)";
+            employerForm.style.transform = "translateX(315px)";
+            indicator.style.transform = "translateX(-70px)";
+            colorEmployerFn.style.color = "#6B6B6B"
+            colorStudentFn.style.color = "#5F27CD"
+        }
+    </script>
+</body>
+
+</html>
