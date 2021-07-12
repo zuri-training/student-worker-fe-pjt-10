@@ -47,7 +47,7 @@ header a{
              flex-direction: row; 
             background-color: white;
         }
-        .sidebar{
+    /*    .sidebar{
             min-width: 60%;
             height: 100%;
             position: fixed;
@@ -96,7 +96,7 @@ header a{
             color: #5F27CD;
             cursor: pointer;
 }
-
+*/
 
 .burger div{
 width: 25px;

@@ -390,7 +390,10 @@ input:focus {
     right: 40px;
     cursor: pointer;
 }
-
+.pen a{
+    text-decoration: none;
+    color: #0A674F;
+}
 .allsection {
     border: 1px solid #0A674F;
     padding: 10px;
