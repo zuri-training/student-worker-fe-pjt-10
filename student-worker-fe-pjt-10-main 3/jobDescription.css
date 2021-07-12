@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+           /* nav with Login button */
+.nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.nav span {
+    padding: 0 5px;
+    font-size: 18px;
+    color: #341F97;
+}
+
+.nav span a {
+    text-decoration: none;
+    color: #341F97;
+}
+
+#studentworker {
+    margin-left: 15px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #1F135B;
+    padding-top: 15px;
+}
+
+.hamburger {
+    margin-top: 15px;
+    display: none;
+    font-size: 25px;
+    color: #341F97;
+    cursor: pointer;
+}
+
+.middle,
+.left-nav {
+    padding-top: 10px;
+    display: flex;
+}
+
+
+.login {
+    margin-bottom: 5px;
+    border-radius: 4px;
+    padding: 5px 20px;
+    text-align: center;
+    background-color: white;
+    color: #341F97;
+    border: 1px solid #341F97;
+    font-weight: bold;
+}
+hr{
+    border: 1px solid #CFBEF0;
+    color: #CFBEF0;
+}
+       /* nav for Job Description */
+       .nav2 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .end span{
+        margin-right: 10px;
+        color: #341F97;
+        font-size: 18px;
+        padding: 0 5px;
+    }
+    .end span a{
+        text-decoration: none;
+        color: #341F97; 
+    }
+    .end{
+        margin-right: 20px;
+        padding-top: 10px;
+    }
+    .alphabet{
+        width: 0px;
+        height: 0px;
+        padding:  3px 4px;
+        border-radius: 50%;
+        border: 1px solid #341F97;
+    }
+    .hamburger2{
+        display: none;
+        font-size: 25px;
+        color: #341F97;
+        cursor: pointer;
+    }
+    .studentworker2{
+        font-size: 25px;
+        font-weight: 400;
+        color: #1F135B;
+        padding-left: 15px;
+    }
+    .subcontainer2 {
+        border: 1px solid #0A674F;
+        max-width: 400px;
+        margin: auto;
+        padding: 20px 40px;
+    }
+     .fa-google{
+         margin-right: 5px;
+     }
+    .jobtitle {
+        text-align: center;
+    }
+
+    .location {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .location .span {
+        padding-left: 20px;
+    }
+
+    .smallhr {
+        width: 50px;
+        position: absolute;
+        
+    }
+    .hidecomment {
+        display: none;
+        margin: 10px 20px;
+        font-size: 18px;
+    }
+ /* nav{
+    padding: 2em 1em 1em;
+    position: relative;
+}
+nav span{
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+}
+hr{
+    border: 1px solid #CFBEF0;
+    color: #CFBEF0;
+}
+.studentworker{
+    margin-left: 2%;
+    color: #1F135B;
+}
+.hamburger{
+    position: absolute;
+    left: 5px;
+    bottom: 14px;
+    color: #341F97;
+    font-size: 20px;
+    cursor: pointer;
+}
+.login{
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    padding: 5px 20px;
+    text-align: center;
+    background-color: white;
+    color: #341F97;
+    border: 1px solid #341F97;
+    font-weight: bold;
+} */
+
+
+/* job description css*/
+.subcontainer{
+    margin: 1em;
+}
+h3{
+    color: #0A674F;
+}
+footer span{
+    margin-right: 5px;
+}
+.span{
+    margin-right: 5px;
+}
+.apply{
+    width: 100%;
+    padding: 1em 0.5em;
+    background-color: #0A674F;
+    border-radius: 5px;
+    border: 1px solid #0A674F;
+    color: white;
+}
+
+/* Footer for all the pages */
+footer{
+    padding: 2em 1.5em;
+    background-color: #2A1979;
+    margin-top: 3.5em;
+    color: white;
+}
+.social, .copyright, .about{
+    text-align: center;
+}
+.social a {
+    font-size: 26px;
+    margin: 0 10px 0 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+.login a{
+    text-decoration: none;
+}
+
+/*  Retail css */
+#searchicon {
+    border: 1px solid #0A674F;
+    cursor: pointer;
+    color: #0A674F;
+    padding: 6px;
+    color: white;
+    border-radius: 4px;
+    background-color: #0A674F;
+}
+
+.filterdrop {
+    width: 400px;
+    margin: auto;
+    position: relative;
+    border: 1px solid #0A674F;
+    padding: 20px;
+    margin-top: 30px;
+    display: none;
+}
+
+.closebtn2 {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.city {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.select {
+    width: 60%;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.apply2 {
+    margin-top: 20px;
+    width: 100%;
+    margin: auto;
+    padding: 7px 0;
+    background-color: #0A674F;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+    border: 1px solid #0A674F;
+}
+.nav3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.desktopfilter {
+    width: 220px;
+    margin-right: 80px;
+}
+
+.upper {
+    position: relative;
+}
+
+#filter {
+    display: none;
+    cursor: pointer;
+}
+
+.desktopfilterflex {
+    width: 500px;
+}
+
+.desktopflex {
+    display: flex;
+    margin: 80px 30px 20px;
+    justify-content: start;
+
+}
+.filter{
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobsflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.subglobal {
+    margin: 2em;
+}
+
+.tinyhr {
+    width: 50px;
+    position: absolute;
+    left: 2em;
+}
+
+
+
+#inputbox {
+    width: 200px;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #0A674F;
+    margin: auto;
+}
+.find{
+    margin: auto;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+.titletext {
+    margin: auto;
+    text-align: center;
+    color: #1F135B;
+}
+
+.details {
+    position: absolute;
+    right: 2em;
+}
+
+.nextprev {
+    text-align: center;
+}
+
+/* Confirm Application css */
+.popup{
+    display: flex;
+    justify-content: center;
+}
+.confirm{
+   border: 1px solid #0A674F;
+   margin: 1em;
+   padding: 1em;
+}
+.confirmbtn{
+   width: 100%;
+   background-color: #0A674F;
+   color: white;
+   border: 1px solid #0A674F;
+   padding: 0.5em 0;
+}
+.confirmbtn:focus{
+   outline: none;
+}
+.resume{
+   text-align: center;
+}
+.resumeSection{
+   margin: 2em 1em;
+}
+.confirmbox {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px 40px;
+    position: relative;
+}
+
+.pen {
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+}
+.pen a{
+    text-decoration: none;
+    color: #0A674F;
+}
+.allsection {
+    border: 1px solid #0A674F;
+    padding: 10px;
+    position: relative;
+}
+.resumeflex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa,
+.far,
+.fas,
+.fa-solid
+{
+    color: #0A674F;
+} 
+
+ /* styling for side bar*/
+ .wrapper{
+    display: block;
+    background-color: white;
+}
+.sidebar{
+    min-width: 25%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin: 0 1em 1em 0;
+    overflow-x: hidden;
+    transition: 2s;
+    background-color: #fff;
+    display: none;
+}
+.sidebarList{
+    margin-top: 6em;
+}
+.sidebarList li{
+   margin-top: 1em;
+   list-style: none;
+   color: #5F27CD;
+}
+.sidebarList li a{
+    text-decoration: none;
+    color: #5F27CD;
+}
+.sidebarList li a:focus{
+    color: gray;
+}
+.sidebarClose{
+    position: absolute;
+    right: 5px;
+    font-size: 25px;
+    color: #5F27CD;
+    cursor: pointer;
+}
+
+/* Signup page*/
+.globe{
+    margin: 1em 1.5em;
+    display: flex;
+    justify-content: center;
+}
+.em{
+   text-align: center;
+   font-size: large;
+   color: #1F135B;
+   font-weight: bold;
+}
+#sign{
+    color: white;
+}
+.already{
+    text-align: center;
+}
+.eyeicon{
+    position: relative;
+    left: 80%;
+    bottom: 38px;
+    cursor: pointer;
+}
+/* My Application css */
+.apps {
+    text-align: center;
+    color: #1F135B;
+}
+
+.appshr {
+    width: 70px;
+}
+.appmargin{
+    margin: 1em 2em;
+}
+.appfooter{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.apptitle{
+    color: #1F135B;
+}
+.selected{
+    padding: 3px;
+    background-color: #9F7DE1;
+    color: #341F97;
+}
+.appnum{
+    margin-right: 4px;
+}
+.appdate{
+    margin-left: 20px;
+}
+.mobileapp {
+    display: none;
+}
+.desktoptitle{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 10px 0;
+    background-color: #9F7DE1;
+    color: #341F97;
+}
+.desktopinfo{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    margin: 10px;
+}
+.desktopapp span{
+    width: 100px;
+}
+.desktopapp{
+    max-width: 1000px;
+    padding-top: 50px;
+    margin: auto;
+}
+.pagenum{
+    text-align: center;
+    margin-top: 60px;
+}
+.navmobile{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.hidenav{
+    display: none;
+}
+.endmobile{
+    color: #341F97;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+        /* Sign up Page */
+        .globe {
+            text-align: center;
+            margin: auto;
+        }
+        .google{
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        .emailpass{
+            box-sizing: border-box;
+        }
+        .emailpass label{
+            position: absolute;
+            left: 0;
+        }
+        form input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid rbga(0, 0, 0, 0.5);
+}
+
+form .loginbtn {
+    width: 100%;
+    background: #0A674f;
+    border: 1px solid #0A674f;
+    cursor: pointer;
+    margin: 10px 0 5px 0 ;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #f8f8f8;
+    font-size: 15px;
+}
+.terms{
+    color: #341F97;
+}
+form{
+    max-width: 250px;
+    position: relative;
+}
+.min{
+    position: absolute;
+    left: 0;
+}
+.fa-eye{
+    position: relative;
+    left: 80px;
+    top: 25px;
+    z-index: 2;
+}
+.reg{
+    margin-top: 40px;
+}
+.log{
+    text-decoration: none;
+    color: #341F97;
+}
+.studentworer2{
+    padding-top: 20px;
+    text-align: center;
+    color: #1F135B;
+    cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+    .studentworker{
+        margin-left: 4%;
+        color: #1F135B;
+    }
+}
+    @media only screen and (max-width: 600px) {
+    .sidebar{
+        min-width: 50%;
+    }
+  }
+ /* Nav bar with login button */
+
+ @media only screen and (max-width: 768px) {
+
+    .middle,
+    .left-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        left: 5px;
+    }
+
+    #studentworker {
+        font-size: 18px;
+    }
+}
+ /* Nav bar without login button */
+ 
+ @media only screen and (max-width: 768px) {
+    .end{
+        display: none;
+    }
+    .hidecomment{
+        display: block;
+    }
+    .hamburger2{
+        display: inline-block;
+    }
+    .location{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media only screen and (max-width: 768px){
+    .jobtitle{
+        display: none;
+    }
+    .subcontainer2{
+        border: none;
+    }
+}
+/* Job description media */
+@media only screen and (max-width: 768px){
+    #appear{
+        display: block;
+    }
+}
+       /* Retail media  */
+             
+       @media only screen and (max-width: 768px) {
+        .find {
+            margin: auto;
+
+        }
+
+        #filter {
+        display: block;
+        cursor: pointer;
+    }
+
+        .desktopfilter {
+            display: none;
+        }
+
+        .desktopflex {
+            display: block;
+        }
+
+        .desktopfilterflex {
+            width: 100%;
+        }
+
+        .details {
+            position: absolute;
+            right: 5px;
+        }
+
+        .tinyhr {
+            position: absolute;
+            left: 0;
+        }
+    }
+    /* My application Media*/
+    @media only screen and (max-width: 768px){
+        .desktopapp{
+            display: none;
+        }
+        .mobileapp{
+            display: block;
+        }
+        .nav2{
+            display: none;
+        }
+        .hidenav{
+            display: block;
+        }
+        .pagenum{
+            display: none;
+        }
+    }

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="employer.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://kit.fontawesome.com/1cbee15c00.js" crossorigin="anonymous"></script>
+    
+    <title>Employer</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        
+        <div class="nav-bar">
+        <div class="logo">
+            <div class="logo-1 logo-fa"><img class="bars" id="hamburger" src="hamburguer.svg"></div>
+            <div class="logo-1">StudentWorker</div>
+        </div>
+
+        <div class="menu-1">
+            
+        <div class="menu">
+            <a href="" class="nav-link"><strong>Home</strong></a>
+            <a href="" class="nav-link">Jobs</a>
+            <a href="" class="nav-link">Employers</a>
+        </div>
+
+        
+            <div class="menu">
+                <a href="" class="nav-link-1">About Us</a>
+                <a href="" class="nav-link-1">Contact Us</a>
+            </div>
+            
+        </div>
+
+            <div class="nav-btn">Login</div>
+        </div>
+
+    </header>
+
+    <section id="intro">
+        <div class="cover">
+            <h2>More work <br> done. For less!</h2>
+        <div class="signup">
+            <a href="ZuriProject/signup.html">Employer Signup</a>
+        </div>
+        </div>
+    </section>
+
+    <main>
+
+        <section class="section--1">
+            <h3>10,000+ Students Ready for Hire</h3>
+
+            <div class="sub-section-1">
+
+                <div class="inner">
+                    <img src="images/image2.jpg">
+                    <h6>Expand your <br> workforce</h6>
+                </div>
+
+                <div class="inner">
+                    <img src="images/image3.png">
+                    <h6>Improve <br> performance</h6>
+                </div>
+
+                <div class="inner">
+                    <img src="images/image4.jpg">
+                    <h6>Save <br> capital</h6>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section--2">
+            <h3>Hire Students in 3 Steps</h3>
+
+            <div class="sub-section-2">
+
+                <div class="inner" id="inner1">
+                    <img src="images/image5.jpg">
+                    <h6>Register <br> Sign up on StudentWorker</h6>
+                </div>
+
+                <div class="inner" id="inner2">
+                    <img src="images/image6.jpg">
+                    <h6>Post Jobs <br> Easy post your jobs to <br> Students</h6>
+                </div>
+
+                <div class="inner" id="inner3">
+                    <img src="images/image7.jpg">
+                    <h6>Hire <br> Screen and employ the <br> best</h6>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section--3">
+            <h3>Top Employers Choose StudentWorker</h3>
+            <div class="companies"></div>
+            <div class="signups">
+                <a href="#">Employer Signup</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="foot-section--1">
+            <i class="fab fa-linkedin    "></i>
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+            <i class="fab fa-twitter    "></i>
+            <i class="fab fa-facebook    "></i>
+        </section>
+
+        <section class="foot-section--2">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms &amp;Privacy Policy</a></li>
+            <li><a href="#">Help</a></li>
+        </section>
+
+        <section class="foot-section--3">
+            <p>Copyright StudentWorker 2021</p>
+        </section>
+
+    </footer>
+
+    <script>
+
+        let hamburger = document.getElementById("hamburger");
+        let nav = document.getElementById("nav");
+        let times = document.getElementById("times");
+
+        nav.style.display = "none";
+
+        hamburger.addEventListener("click", showNav);
+
+        function showNav() {
+            nav.style.display = "block";
+        }
+
+        times.addEventListener("click", hideNav);
+
+        function hideNav() {
+            nav.style.display = "none";
+        }
+
+    </script>
+    
+</body>
+</html>

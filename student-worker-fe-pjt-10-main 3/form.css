@@ -1,0 +1,278 @@
+ 	body{
+		padding: 0;
+		margin: 0;
+	}
+		footer{
+    padding: 2em 1.5em;
+
+    background-color: #2A1979;
+    margin-top: 3.5em;
+    color: white;
+}
+.social, .copyright, .about{
+    text-align: center;
+}
+.social a {
+    font-size: 26px;
+    margin: 0 10px 0 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+.login a{
+    text-decoration: none;
+}
+        .nav2 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .end span {
+            margin-right: 10px;
+            color: #341F97;
+            font-size: 18px;
+            padding: 0 5px;
+        }
+
+        .end span a {
+            text-decoration: none;
+            color: #341F97;
+        }
+
+        .end {
+            margin-right: 20px;
+            padding-top: 10px;
+        }
+
+        .alphabet {
+            width: 0px;
+            height: 0px;
+            padding: 3px 4px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            border: 1px solid #341F97;
+        }
+
+        .hamburger2 {
+            display: none;
+            font-size: 25px;
+            color: #341F97;
+            cursor: pointer;
+        }
+
+        .studentworker2 {
+            font-size: 25px;
+            font-weight: 400;
+            color: #1F135B;
+        }
+
+        .navmobile {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hidecomment {
+            display: none;
+            margin: 10px 20px;
+            font-size: 18px;
+        }
+        
+        /*Education Form navbar htmls starts	*/
+       
+        .desktopform{
+        	border: 1px solid green;
+        	margin: 50px;
+        	padding: 30px 20px;
+        }
+        .desktopform2{
+        	
+        	margin: 50px;
+        	padding: 30px 20px;
+        }
+        form{
+        	position: relative;
+        }
+  
+   
+        .educationform2{
+        	max-width: 400px;
+        	margin: auto;
+        	text-align: center;
+        	position: relative;
+        }
+        
+        .educationform2 .label{
+        	position: absolute;
+        	left: 0;
+        }
+        .uniflex{
+        	display: flex;
+        	justify-content: space-between;
+        }
+        .uni{
+        	margin-right: 20px;
+        }
+        .label2{
+            position: absolute;
+            right: 360px;
+        }
+        .label3{
+        	position: absolute;
+            right: 400px;
+        
+        }
+        .mobileviewform{
+        	display: none;
+        }
+
+/*Education Form starts	*/
+        main h2, .intro{
+        	text-align: center;
+        	   color: #341F97;
+        }
+        .eduform{
+        	 position: relative;
+        }
+      
+        .educationform .label{
+        	position: absolute;
+        	left: 0;
+        }
+             
+        form input {
+          width: 100%;
+          height: 30px;
+          margin-bottom: 10px;
+          padding: 0 10px;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+          border-radius: 3px;
+          border: 1px solid rbga(0, 0, 0, 0.5);
+        }
+        .yearflex{
+        	display: flex;
+        	justify-content: space-between;
+        	
+        }
+        .startyear{
+        	margin-right: 20px;
+        }
+        .endyear{
+        	padding-left: 100px;
+        }
+         .frmbtn{
+         	margin: auto;
+         	margin-top: 40px;
+         	text-align: center;
+         }
+         .frmbtn2{
+         	margin-top: 20px;
+         	justify-content: space-between;
+         	display: flex;
+         }
+         .nextbutton{
+             padding: 10px 40px;
+             background-color: #0A674F;
+             color: white;
+             border: 1px solid #0A674F;
+             border-radius: 4px;
+         }
+         .prevbutton{
+            padding: 10px 40px;
+            background-color: white;
+            color: #0A674F;
+            border: 1px solid #0A674F;
+            border-radius: 4px;
+        }
+        .fa-circle{
+            font-size: 12px;
+        }
+        /*  PersonDetails      */
+        .personaldetails {
+            position: relative;
+            padding: 15px 60px;
+            max-width: 500px;
+            margin: auto;
+            margin-top: 30px;
+            box-sizing: border-box;
+
+        }
+        .personaldetails2 {
+            position: relative;
+            padding: 15px;
+            max-width: 400px;
+            margin: auto;
+            margin-top: 30px;
+            box-sizing: border-box;
+
+        }
+
+        .personalflex {
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        
+        .centredbtn{
+            text-align: center;
+            margin: auto;
+        }
+        .nextbutton2{
+            margin-top: 20px;
+             padding: 10px 100px;
+             background-color: #0A674F;
+             color: white;
+             border: 1px solid #0A674F;
+             border-radius: 4px;
+         }
+         .mobileflex{
+            position: relative;
+            width: 100%;
+        }
+        .mustflex{
+            
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+        #code{
+            width: 20%;
+            margin-right: 10px;
+        }
+        @media only screen and (max-width: 768px){
+             .end{
+                 display: none;
+             }
+             .hidecomment{
+                 display: block;
+             }
+             .educationform2{
+                 max-width: 60%;
+             }
+            .educationform{
+            max-width: 60%;
+        	margin: auto;
+        	text-align: center;
+        	position: relative;
+            }
+            .desktopviewform{
+            	display: none;
+            }
+            .mobileviewform{
+            	display: block;
+            }
+            .nextbutton{
+                padding: 5px 20px;
+            }
+            .prevbutton{
+               padding: 5px 20px;
+           }
+        }
+        @media only screen and (max-width: 500px){
+            .personalflex{
+                display: block;
+            }
+         }

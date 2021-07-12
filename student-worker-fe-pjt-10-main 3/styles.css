@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+*,
+*::before,
+*::after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+}
+
+html {
+	--body-font: 'Roboto', sans-serif;
+	--body-color: white;
+}
+/* kara' added code*/
+.icon-image{
+	max-width: 100px;
+	padding: 20px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+h2, h4, .inn-p{
+	color: #341F97;
+}
+.icon{
+	padding: 20px 0;
+	background-color: #341F97;
+}
+/* kara */
+a {
+	text-decoration: none;
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+}
+.container {
+	width: 100%;
+	padding: 0 2.4rem;
+	max-width: 122.4rem;
+	margin: 0 auto;
+}
+
+section {
+	padding: 3.6rem 0;
+	overflow-y: hidden;
+
+}
+
+/* Navbar */
+header{
+	top: 0;
+	background-color: var(--body-color);
+	z-index: 1;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	padding: 0 0.8rem;
+}
+
+.nav::before {
+	position: fixed;
+	top: 0;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 100vh;
+	background: #341F97;
+	opacity: 0;
+	transform: scale(0);
+	transition: opacity 0.5s;
+	z-index: 2;
+}
+
+.nav p{
+	text-transform: uppercase;
+	color: #341F97;
+	font-size: 1rem;
+}
+
+.nav >.login a {
+	color: #341F97;
+	font-size: 0.85rem;
+	padding: 0.75rem 0.9rem;
+	border: 1px solid #341F97;
+	background: white;
+	border-radius: 5px;
+	margin-right: 5px;
+	transition: background 0.5s;
+	font-family: bold;
+}
+
+.nav >.login a:hover {
+	background: var(--body-color);
+}
+
+.nav-item {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	background: white;
+	color: #341F97;
+	width: 75%;
+	height: 100vh;
+	justify-content: space-around;
+	padding: 3.4rem;
+	transform: translateX(-100%);
+	transition: transform 0.5s;
+	z-index: 3;
+}
+
+.nav-list {
+	list-style: none;
+	border-bottom: 2px solid #ccc;
+}
+
+.nav-link {
+	color: #341F97;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing:1.5px;
+	display: block;
+	margin-bottom: 2.5px;
+}
+
+.menu {
+	font-size: 1.7rem;
+	color: #341F97;
+	cursor: pointer;
+	z-index: 4;
+}
+
+.fa-times {
+	display: none;
+}
+
+.open .nav-item {
+	transform: translateX(0);
+}
+
+/*.open .nav::before {
+	opacity: 1;
+	transform: scale(1);
+}*/
+.open .fa-times {
+	display: block;
+}
+
+.open .fa-bars {
+	display: none;
+}
+
+/* Hero */
+.hero {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), transparent), url(../images/backgroung.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+
+.container > div {
+	flex: 1;
+}
+
+.banner-header h1{
+	font-size: 3.2rem;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 2.5rem;
+	font-family: var(--body-font);
+	letter-spacing: 0.1rem;
+
+}
+
+
+.btn {
+	text-transform: uppercase;
+	letter-spacing: 0.12rem;
+}
+
+.cta-btn {
+	color: #fff;
+	font-size: 1rem;
+	padding: 0.8rem 1.6rem;
+	background: #0A674F;
+	border-radius: 10px;
+	transition: background 0.5s;
+
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+	background: white;
+	color: #0A674F;
+}
+
+/* find your next job */
+.find-job {
+	margin-top: 3rem;
+}
+.container h2 {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.find-job .label {
+	text-align: center;
+	font-size: 1rem;
+}
+
+
+.find-job .input-search {
+	margin-top: 0.9rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.input-search .search {
+	background: #0A674F;
+	padding: 0.5rem;
+	color: #fff;
+	cursor: pointer;
+    border-radius: 4px;
+}
+
+.input-search input {
+	width: 75%;
+	padding: 0.6rem 0.8rem;
+	outline: none;
+	border: 1px solid gray;
+	background: #fff;
+	border-radius: 4px;
+}
+
+/* Job categories */
+.job-categories .my-content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1.5rem;
+	margin: 3rem 0 0;
+}
+
+.my-content .category {
+	text-align: center;
+}
+
+.category img {
+	width: 55%;
+}
+
+ /*  .body-btn {
+	letter-spacing: 0.1rem;
+	font-size: 0.8rem;
+	color: rgb(102, 21, 21);
+}
+*/
+
+
+/* banner */
+.banner-pic p {
+	font-size: 1.2rem;
+	text-transform: capitalize;
+}
+
+.banner-pic a {
+	display: block;
+	background: var(--body-color);
+	padding: 0.7rem 1.6rem;
+	color: #fff;
+	font-size: 1.3rem;
+	text-transform: capitalize;
+	transition: background 0.5s;
+}
+
+.banner-pic a:hover,
+.banner-pic a:focus {
+	background: white;
+	color: #0A674F;
+}
+
+.banner-pic > div:last-child {
+	text-align: center;
+}
+
+.inn-container > div {
+	margin: 2.5rem 0;
+	text-align: center;
+}
+
+.inn-container > div > img{
+	margin-bottom: 1.5rem;
+}
+
+/* footer */
+footer {
+	padding: 4.9rem 0;
+	background: #341F97;
+	text-align: center;
+	color: #fff;
+}
+
+footer .icon{
+	display: flex;
+	justify-content: center;
+}
+
+footer li {
+	margin-right: 1rem;
+	list-style: none;
+}
+
+footer li i {
+	font-size: 1.2rem;
+	padding: 0.8rem 0;
+	margin-right: 1.3rem;
+	cursor: pointer;
+}
+
+footer li a {
+	font-size: 0.75rem;
+	color: #fff;
+}
+
+footer .link {
+	padding: 0.7rem 0;
+}
+
+footer p {
+	font-size: 0.8rem;
+}
+
+ @media screen and (min-width: 800px) {
+	/* body {
+		display: none;
+	} */
+	.menu {
+		display: none;
+	}
+
+	.nav::before {
+		display: nne;
+	}
+
+	.nav-item {
+		position: initial;
+		width: initial;
+		height: initial;
+		flex-direction: row;
+		justify-content: initial;
+		transform: initial;
+		transition: initial;
+		background: transparent;
+		padding: 0;
+	}
+
+	.nav-list {
+		border-bottom: none;
+	}
+
+	.nav-link {
+		font-size: 0.8rem;
+		padding-left: 2rem;
+	}
+
+	/* hero */
+	.banner-header h1{
+		font-size: 4.5rem;
+	}
+
+	/* find job */
+	.input-search input {
+		max-width: 45%;
+	}
+
+	/* job categories */
+	.job-categories .my-content {
+		display: flex;
+	}
+
+	.job-categories .category {
+		flex: 1;
+	}
+
+	.category .icon {
+		margin-bottom: 0.65rem;
+	}
+
+	/* banner */
+	.inn-container {
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	.inn-container > div {
+		flex: 1;
+		margin-right: 5%;
+	}
+	.inn-container img {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	.banner-pic > div:last-child {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+	}
+
+	/* footer */
+	footer li i {
+		font-size: 1.5rem;
+		padding: 0.8rem 0;
+		margin-right: 1.5rem;
+		cursor: pointer;
+	}
+	
+	footer li a {
+		font-size: 0.9rem;
+	}
+	
+	footer .link {
+		padding: 0.7rem 0;
+	}
+	
+	footer p {
+		font-size: 1rem;
+	}
+}
