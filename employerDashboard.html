@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Application</title>
     <link rel="stylesheet" href="jobDescription.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" hrf="login.css">
     <script src="https://kit.fontawesome.com/3c83d4aa48.js" crossorigin="anonymous"></script>
 </head>
 
@@ -35,25 +35,25 @@
             <span class="studentworker2">StudentWorker</span>
         </div>
         <div class="end">
-            <span><a href="">Jobs</a></span>
-            <span><a href="">My Application</a></span>
-            <span><a href="">Edit Resume</a></span>
+            <span><a href="">Dashbord</a></span>
+            <span><a href="">Post Job</a></span>
             <span><i class="far fa-comment" style="color: #341F97;"></i></span>
-            <span class="alphabet">A</span>
+            <span class="alphabet">D</span>
             <span><i class="fa fa-caret-down" style="color: #341F97;"></i></span>
         </div>
+        <div class="hidecomment"><span><i class="far fa-comment" style="color: #341F97;"></i></span></div>
     </nav>
     <nav class="hidenav">
         <div class="navmobile">
-         <div>
-             <span class="hamburger2" onclick="openSidebar()">&#9776;</span>
-             <span class="studentworker2">StudentWorker</span>
-         </div>
-         <div class="endmobile">
-             <span><i class="far fa-comment" style="color: #341F97;"></i></span>
-         </div>
+            <div>
+                <span class="hamburger2" onclick="openSidebar()">&#9776;</span>
+                <span class="studentworker2">StudentWorker</span>
+            </div>
+            <div class="endmobile">
+                <span><i class="far fa-comment" style="color: #341F97;"></i></span>
+            </div>
         </div>
-     </nav>
+    </nav>
     <hr>
     <section class="mobileapp">
         <p class="apps">My Applications</p>
@@ -67,23 +67,29 @@
         </div>
     </section>
     <section class="desktopapp">
+        <span class="job-title">Job Title</span> <span class="posted">Posted</span>
         <div class="desktoptitle">
-            <span>Company</span>
+            <span>Applicant</span>
             <span>Role</span>
             <span>Applied on</span>
-            <span>Number of Aplicants</span>
-            <span>Application Status</span>
+            <span>Resume</span>
         </div>
         <div class="desktopinfo">
-            <span>Company</span>
+            <span>Ayo David</span>
             <span>Job title</span>
             <span>Today</span>
-            <span>12</span>
-            <span>Applied</span>
-        </div>
+            <span>View</span>
+        </div><hr class="job-title-hr">
+        <div class="desktopinfo">
+            <span>Kenneth Carl</span>
+            <span>Job title</span>
+            <span>Today</span>
+            <span>View</span>
+        </div><hr class="job-title-hr">
+        <a href="./deleteEmployerPost.html"><button  class="review-job-post">Review Job Post</button></a>
     </section>
-    <p class="pagenum"><i class="fa fa-chevron-left" style="color: #341F97;"></i>1/1<i class="fa fa-chevron-right" style="color: #341F97;"></i></p>
-    <footer class="appfooter">
+    
+    <footer>
         <p class="social">
             <span><a href="https://linkedin.com" class="fa fa-linkedin" aria-hidden="true"></a></span>
             <span> <a href="https://instagram.com" class="fa fa-instagram" aria-hidden="true"></a></span>

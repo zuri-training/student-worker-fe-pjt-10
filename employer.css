@@ -1,9 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 /* general design */
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
     text-align: center;
     width: 100%;
     padding-top: 1em;
-    padding-bottom: 1em;
+
 }
 
 .nav-bar {
@@ -23,8 +23,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 30px;
-    color: #000;
+   /* margin: 40px 30px; */
+    color: #1F135B;
     margin-bottom: 20px;
 }
 
@@ -52,17 +52,18 @@ header {
 }
 
 .nav-btn {
-    border: 1px solid #000;
+    border: 1px solid #1F135B;
     border-radius: 4px;
-    padding: 10px 30px;
+    padding: 5px 20px;
     margin-top: -10px;
-    font-size: 1.7vw
+    font-size: 1.7vw;
+    margin-right: 15px;
 }
 
 .nav-link {
     padding: 0 20px;
     text-decoration: none;
-    color: #000;
+    color: #1F135B;
 }
 
 .menu-1 {
@@ -75,7 +76,7 @@ header {
 .nav-link-1 {
     padding: 0 20px;
     text-decoration: none;
-    color: #000;
+    color: #1F135B;
 }
 
 #intro {
