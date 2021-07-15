@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
   .nav2 {
             display: flex;
             justify-content: space-between;
@@ -10,7 +16,9 @@
             font-size: 18px;
             padding: 0 5px;
         }
-
+        .fa-circle{
+            font-size: 12px;
+        }
         .end span a {
             text-decoration: none;
             color: #341F97;
@@ -31,7 +39,7 @@
         }
 
         .hamburger2 {
-            display: nne;
+            display: none;
             font-size: 25px;
             color: #341F97;
             cursor: pointer;
@@ -57,7 +65,7 @@
         h1{
 text-align:center;
 margin-top: 50px;
-color:green;
+color: #1F135B;
 }
 
 .center-div {
@@ -110,7 +118,7 @@ form{
              } 
 
              .activebtn a:active  {
-color:green;
+color: #0A674F;
                 
              }
 
@@ -124,18 +132,28 @@ color:green;
   max-width: 500px;
              }
 
-
-   .button-area a {
-   background-color: green;
-                color: #fff;
-    padding: 1em 2.4em;
-    font-size: .9em;
-    margin: 1em;
+.button-area .previous{
+    margin-top: 20px;
+    padding: 10px 60px;
+    background-color: white;
+    color: #0A674F;
+    border: 1px solid #0A674F;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+.button-area .next{
+    margin-top: 20px;
+    padding: 10px 60px;
+    background-color: #0A674F;
     color: white;
+    border: 1px solid #0A674F;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+   .button-area a {
     text-decoration: none;
-    flex-grow: 1;
-    text-align: center;
-  }
+    
+  } 
 
 
 		footer{

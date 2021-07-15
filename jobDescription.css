@@ -192,6 +192,11 @@ footer span{
     border: 1px solid #0A674F;
     color: white;
 }
+.skip{
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
 
 /* Footer for all the pages */
 footer{
@@ -489,14 +494,29 @@ input:focus {
 .appmargin{
     margin: 1em 2em;
 }
-.appfooter{
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-}
+
 .apptitle{
     color: #1F135B;
+}
+.job-title{
+    margin-left: 10px;
+}
+.job-title-hr{
+    margin: 0px 10px;
+}
+.review-job-post{
+    margin-top: 10px;
+    padding: 10px 60px;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+}
+.posted{
+    padding: 2px;
+    background-color: #E8FBF6;
+    color: #0A674F;
 }
 .selected{
     padding: 3px;

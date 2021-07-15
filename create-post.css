@@ -10,6 +10,9 @@
             font-size: 18px;
             padding: 0 5px;
         }
+        .fa-circle{
+            font-size: 12px;
+        }
 
         .end span a {
             text-decoration: none;
@@ -31,7 +34,7 @@
         }
 
         .hamburger2 {
-            display: nne;
+            display: none;
             font-size: 25px;
             color: #341F97;
             cursor: pointer;
@@ -82,11 +85,11 @@
 .form-labels-on-top h1{
     display: inline-block;
     box-sizing: border-box;
-    color: green;
+    color: #0A674F;
     font-size: 24px;
     padding: 0 0 12px 0;
     margin: 0;
-    border-bottom: 2px solid #6CAEE0;
+    border-bottom: 2px solid #fff;
 }
 
 .form-labels-on-top .form-row > label span{
@@ -127,7 +130,7 @@
 
 .form-labels-on-top button{
     border-radius: 2px;
-    background-color:  #6caee0;
+    background-color:  #0A674F;
     color: #ffffff;
     font-weight: bold;
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
@@ -167,17 +170,26 @@
   max-width: 500px;
              }
 
-
+             .button-area .previous{
+                margin-top: 20px;
+                padding: 10px 30px;
+                background-color: white;
+                color: #0A674F;
+                border: 1px solid #0A674F;
+                border-radius: 4px;
+                margin-left: 20px;
+            }
+            .button-area .next{
+                margin-top: 20px;
+                padding: 10px 40px;
+                background-color: #0A674F;
+                color: white;
+                border: 1px solid #0A674F;
+                border-radius: 4px;
+                margin-right: 20px;
+            }
    .button-area a {
-   background-color: green;
-                color: #fff;
-    padding: 1em 2.4em;
-    font-size: .9em;
-    margin: 1em;
-    color: white;
     text-decoration: none;
-    flex-grow: 1;
-    text-align: center;
   }
 
 .skip{
